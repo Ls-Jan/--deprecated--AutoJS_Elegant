@@ -67,7 +67,7 @@ loopClick.__locator.Callback=function(x,y){
     toast('【开始点击】')
     ui.run(()=>{main.SetTitle('剩余次数：'+config.loopClick.count)});
     for(let c=config.loopClick.count;c-->0;){
-        sleep(config.loopClick.interval*100);
+        sleep(config.loopClick.interval*1000);
         click(x,y);
         ui.run(()=>{main.SetTitle('剩余次数：'+c)});
     }
