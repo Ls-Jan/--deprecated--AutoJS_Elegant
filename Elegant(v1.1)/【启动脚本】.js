@@ -179,7 +179,6 @@ rigidClick.Alter_ReClick=function(){
         }
         tool.storage.Put(config.storageName,'rigidClick',config.rigidClick);
     },'修改“再点击时长”');
-    tool.storage.Put();
 }
 
 
