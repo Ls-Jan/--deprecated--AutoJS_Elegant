@@ -1,0 +1,24 @@
+{
+    "storageName":"autoConfig",
+    "ui":{
+        "alpha":0.7,
+        "pos":[200,200],
+        "winWidth":500,
+
+        "sep_col":"#8000FFFF",
+        "titleStyle":["#FFFF00","#60000000",20],
+
+        "optColor":{"exec":["#00EEEE","#000000",18],"menu":["#FFFFFF","#000000",18],"config":["#00AACC","#000000",16],"exit":["#EE0000","#000000",19]},
+        "optDimRate":0.5
+    },
+    "loopClick":{
+        "count":1000,
+        "interval":2
+    },
+    "rigidClick":{
+        "viewTime":20,
+        "interval":2,
+        "reClick":7
+    }
+}
+

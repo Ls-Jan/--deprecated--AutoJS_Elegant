@@ -56,7 +56,7 @@ var blacklistPlus={//额外的黑名单，因为最近总是发现饿了么会�
 function SetTask(task){//对FinishTask文件中的task的部分数据进行重写
     task.keyword_Search=['去'];
     task.keyword_Estimate='完成';
-    task.keyword_TaskPage='饿了么果园';
+    task.keyword_TaskPage=['饿了么果园',[1,3]];//1的是支付宝的，3的是饿了么的
     task.keyword_PackageName=['Alipay','me.ele'];
     task.flag_Attempt=1;//开启一下“尝试点击”功能，因为饿了么有很多任务是点开就算完成的，根本不需要浏览
     task.GotoButton=function(wid){

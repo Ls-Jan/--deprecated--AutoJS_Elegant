@@ -1,0 +1,20 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+
+    //这个是用于VSCode的任务，因为autoJS脚本的运行要丢到手机上才行。虽然可以远程运行脚本，但如果脚本里头出现了require语句的话直接拔心凉(因为require参照的路径是手机的而不是电脑的)
+    //使用adb进行文件复制。路径问题自己解决吧，我也不知道我是怎么找出来的路径
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "复制项目到手机",
+            "type": "shell",
+            "command": "cmd /c 'chcp 65001 && adb push ./Elegant(v1.3)/ /storage/sdcard0/AutoJS'",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
